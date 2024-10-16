@@ -1,0 +1,501 @@
+id,name,shortName,tla
+1,1. FC Koln,1. FC Koln,KOE
+2,TSG 1899 Hoffenheim,Hoffenheim,TSG
+3,Bayer 04 Leverkusen,Leverkusen,B04
+4,Borussia Dortmund,Dortmund,BVB
+5,FC Bayern Munchen,Bayern,FCB
+6,FC Schalke 04,Schalke,S04
+7,Hamburger SV,HSV,HSV
+8,Hannover 96,Hannover,H96
+9,Hertha BSC,Hertha BSC,BSC
+10,VfB Stuttgart,Stuttgart,VFB
+11,VfL Wolfsburg,Wolfsburg,WOB
+12,SV Werder Bremen,Bremen,SVW
+13,1. FC Kaiserslautern,Kaiserslautern,FCK
+14,1. FC Nurnberg,Nurnberg,FCN
+15,1. FSV Mainz 05,Mainz,M05
+16,FC Augsburg,Augsburg,FCA
+17,SC Freiburg,Freiburg,SCF
+18,Borussia Monchengladbach,M'gladbach,BMG
+19,Eintracht Frankfurt,Frankfurt,SGE
+20,FC St. Pauli 1910,St. Pauli,STP
+21,SpVgg Greuther Furth 1903,Greuther Furth,FUR
+22,FC Erzgebirge Aue,Erzgebirge Aue,AUE
+23,FC Energie Cottbus,Cottbus,FCE
+24,TSV Fortuna 95 Dusseldorf,Dusseldorf,F95
+25,MSV Duisburg,Duisburg,DUI
+26,TSV 1860 Munchen,1860 Munchen,60M
+27,Alemannia Aachen,Aachen,AAC
+28,1. FC Union Berlin,Union Berlin,UNB
+29,SC Paderborn 07,SC Paderborn,SCP
+30,FSV Frankfurt,FSV Frankfurt,FSV
+31,FC Ingolstadt 04,Ingolstadt,ING
+32,Karlsruher SC,Karlsruhe,KSC
+33,Eintracht Braunschweig,Braunschweig,BNS
+34,FC Hansa Rostock,Hansa Rostock,ROS
+35,SG Dynamo Dresden,Dynamo Dresden,DYN
+36,VfL Bochum 1848,Bochum,BOC
+37,SC Rot-Weiss Oberhausen,Oberhausen,RWO
+38,Arminia Bielefeld,Bielefeld,BIE
+39,SV Wehen Wiesbaden,Wehen,SVW
+41,1. FC Saarbrucken,Saarbrucken,SAR
+42,Offenbacher Kickers,Kick. Offenbach,OFF
+43,SSV Jahn Regensburg,Regensburg,REG
+44,1. FC Heidenheim 1846,Heidenheim,HEI
+45,VfB Stuttgart II,Stuttgart II,STU
+46,SV Sandhausen 1916,Sandhausen,SAN
+47,SV Babelsberg 03,Babelsberg,BAB
+48,SpVgg Unterhaching,Unterhaching,UNT
+49,FC Carl Zeiss Jena,CZ Jena,CZJ
+50,VfR Aalen,Aalen,AAL
+53,SV Wacker Burghausen,Burghausen,BUR
+54,Chemnitzer FC,Chemnitzer FC,CFC
+55,SV Darmstadt 98,Darmstadt,SVD
+57,Arsenal FC,Arsenal,ARS
+58,Aston Villa FC,Aston Villa,AVL
+59,Blackburn Rovers FC,Blackburn,BLA
+60,Bolton Wanderers FC,Bolton,BOL
+61,Chelsea FC,Chelsea,CHE
+62,Everton FC,Everton,EVE
+63,Fulham FC,Fulham,FUL
+64,Liverpool FC,Liverpool,LIV
+65,Manchester City FC,Man City,MCI
+66,Manchester United FC,Man United,MUN
+67,Newcastle United FC,Newcastle,NEW
+68,Norwich City FC,Norwich,NOR
+69,Queens Park Rangers FC,QPR,QPR
+70,Stoke City FC,Stoke,STK
+71,Sunderland AFC,Sunderland,SUN
+72,Swansea City AFC,Swansea,SWA
+73,Tottenham Hotspur FC,Tottenham,TOT
+74,West Bromwich Albion FC,West Brom,WBA
+75,Wigan Athletic FC,Wigan Athletic,WIG
+76,Wolverhampton Wanderers FC,Wolverhampton,WOL
+77,Athletic Club,Athletic,ATH
+78,Club Atletico de Madrid,Atleti,ATL
+79,CA Osasuna,Osasuna,OSA
+80,RCD Espanyol de Barcelona,Espanyol,ESP
+81,FC Barcelona,Barca,FCB
+82,Getafe CF,Getafe,GET
+83,Granada CF,Granada,GRA
+84,Malaga CF,Malaga,MAL
+86,Real Madrid CF,Real Madrid,RMA
+87,Rayo Vallecano de Madrid,Rayo Vallecano,RAY
+88,Levante UD,Levante,LEV
+89,RCD Mallorca,Mallorca,MAL
+90,Real Betis Balompie,Real Betis,BET
+91,Real Zaragoza,Real Zaragoza,ZAR
+92,Real Sociedad de Futbol,Real Sociedad,RSO
+94,Villarreal CF,Villarreal,VIL
+95,Valencia CF,Valencia,VAL
+96,Real Sporting de Gijon,Gijon,SPO
+98,AC Milan,Milan,MIL
+99,ACF Fiorentina,Fiorentina,FIO
+100,AS Roma,Roma,ROM
+101,AC Siena,Siena,SIE
+102,Atalanta BC,Atalanta,ATA
+103,Bologna FC 1909,Bologna,BOL
+104,Cagliari Calcio,Cagliari,CAG
+105,Calcio Catania,Catania,CAT
+106,AC Chievo Verona,Chievo,CHI
+107,Genoa CFC,Genoa,GEN
+108,FC Internazionale Milano,Inter,INT
+109,Juventus FC,Juventus,JUV
+110,SS Lazio,Lazio,LAZ
+112,Parma Calcio 1913,Parma,PAR
+113,SSC Napoli,Napoli,NAP
+114,Palermo FC,Palermo,PAL
+115,Udinese Calcio,Udinese,UDI
+196,SG Wattenscheid 09,Wattenscheid,SGW
+198,FSV Zwickau,Zwickau,ZWI
+200,ASC Daco-Getica Bucuresti,Daco-Getica,DAC
+201,Carrick Rangers FC,Carrick,CAR
+204,SC Fortuna Koln,Fortuna Koln,FOR
+209,Mannheim,,
+213,SV Reutlingen 1905,,
+215,Schweinfurt,,
+217,Eintracht Trier,Trier,
+220,VfB Lubeck,Lubeck,LUB
+225,Sportfreunde Siegen,,
+235,Oldenburg,,
+237,Albacete Balompie,Albacete,ALB
+247,CD Logrones,,
+250,Real Valladolid CF,Valladolid,VDD
+254,CD Tenerife,CD Tenerife,TEN
+258,Real Murcia CF,Real Murcia,MUR
+260,CD Numancia,Numancia,NUM
+263,Deportivo Alaves,Alaves,ALA
+264,Cadiz CF,Cadiz CF,CAD
+267,UD Almeria,Almeria,ALM
+268,Deportivo Xerez,,XER
+269,Hercules de Alicante CF,Hercules,HER
+270,Merida AD,Merida,MER
+272,Extremadura CF,,
+275,UD Las Palmas,Las Palmas,LPA
+278,SD Eibar,Eibar,EIB
+279,CD Toledo,Toledo,TOL
+280,Club Lleida Esportiu,Lleida,LLE
+281,Ath Madrid B,,ATL
+284,Orense,,
+285,Elche CF,Elche,ELC
+286,SD Ponferradina,Ponferradina,PON
+289,Real Madrid Castilla,Madrid Castilla,CAS
+295,Cordoba CF,Cordoba,COR
+298,Girona FC,Girona,GIR
+299,SD Huesca,Huesca,HUE
+300,FC Cartagena,Cartagena,CAR
+302,FC Villarreal B,Villarreal B,VIL
+303,FC Barcelona B,FC Barcelona B,FCB
+304,AD Alcorcon,AD Alcorcon,ALC
+314,Ecija Balompie,,ÉCI
+322,Hull City AFC,Hull City,HUL
+325,Portsmouth FC,Portsmouth,POR
+328,Burnley FC,Burnley,BUR
+332,Birmingham City FC,Birmingham,BIR
+336,Blackpool FC,Blackpool,BLA
+338,Leicester City FC,Leicester City,LEI
+340,Southampton FC,Southampton,SOU
+341,Leeds United FC,Leeds United,LEE
+342,Derby County FC,Derby County,DER
+343,Middlesbrough FC,Middlesbrough,MID
+345,Sheffield Wednesday FC,Sheffield Wed,SHE
+346,Watford FC,Watford,WAT
+347,AFC Wimbledon,AFC Wimbledon,WMB
+348,Charlton Athletic FC,Charlton,CHA
+349,Ipswich Town FC,Ipswich Town,IPS
+351,Nottingham Forest FC,Nottingham,NOT
+354,Crystal Palace FC,Crystal Palace,CRY
+355,Reading FC,Reading,REA
+356,Sheffield United FC,Sheffield Utd,SHE
+357,Barnsley FC,Barnsley,BAR
+361,Rochdale AFC,Rochdale,ROC
+363,Chesterfield FC,Chesterfield,CHE
+365,Colchester United FC,Colchester Utd,COL
+366,Torquay United FC,Torquay,TOR
+369,Walsall FC,Walsall,WAL
+370,Gillingham FC,Gillingham,GIL
+371,Hartlepool,,
+372,Hereford FC,Hereford,HER
+376,Northampton Town FC,Northampton,NOR
+384,Millwall FC,Millwall,MIL
+385,Rotherham United FC,Rotherham Utd,ROT
+387,Bristol City FC,Bristol City,BRI
+389,Luton Town FC,Luton Town,LUT
+391,Notts County FC,Notts County,NOT
+393,Port Vale FC,Port Vale,PVL
+394,Huddersfield Town AFC,Huddersfield,HUD
+396,Stockport County FC,Stockport,STO
+397,Brighton & Hove Albion FC,Brighton Hove,BHA
+399,Leyton Orient FC,Leyton Orient,LEY
+400,Bristol Rovers FC,Bristol Rovers,BRI
+402,Brentford FC,Brentford,BRE
+404,Wrexham AFC,Wrexham,WRE
+409,Milton Keynes Dons FC,Milton Keynes,MKD
+411,Cheltenham Town FC,Cheltenham T,CHE
+431,SSC Bari,Bari,BAR
+436,AS Livorno Calcio,Livorno,LIV
+445,Empoli FC,Empoli,EMP
+446,Ascoli Calcio 1898 FC,Ascoli,ASC
+447,ACR Messina,,MES
+448,ACD Treviso,Treviso,ACD
+449,Brescia Calcio,Brescia,BRS
+450,Hellas Verona FC,Verona,HVE
+451,L.R. Vicenza Virtus,Vicenza Virtus,VIC
+452,AC Perugia Calcio,Perugia,PER
+453,Piacenza Calcio 1919,Piacenza,PIA
+454,Venezia FC,Venezia FC,VEN
+455,US Salernitana 1919,Salernitana,SAL
+457,US Cremonese,Cremonese,CRE
+458,Padova Calcio,Padova,PAD
+460,Modena FC 2018,Modena,MOD
+461,Ancona 1905,,ANC
+464,UC AlbinoLeffe,AlbinoLeffe,ALB
+465,Gallipoli,,
+466,AS Cittadella,Cittadella,CIT
+470,Frosinone Calcio,Frosinone,FRO
+471,US Sassuolo Calcio,Sassuolo,SAS
+472,FC Crotone,Crotone,CRO
+479,Ternana Calcio,Ternana,TRN
+486,Calcio Avellino SSD,Avellino,AVE
+487,AC Pisa 1909,AC Pisa,PIS
+488,Spezia Calcio,Spezia Calcio,SPE
+489,SS Arezzo,Arezzo,ARE
+490,US Catanzaro,Catanzaro,CAT
+492,Portogruaro,,
+496,Rio Ave FC,Rio Ave,RIO
+498,Sporting Clube de Portugal,Sporting CP,SPO
+499,SC Olhanense,Olhanense,OLH
+501,Nacional Funchal,Funchal,NFU
+503,FC Porto,Porto,FCP
+507,FC Pacos de Ferreira,Pacos Ferreira,PAÇ
+508,UD Leiria,Leiria,LEI
+510,AC Ajaccio,AC Ajaccio,ACA
+511,Toulouse FC,Toulouse,TOU
+512,Stade Brestois 29,Brest,BRE
+514,SM Caen,SM Caen,SMC
+515,Valenciennes FC,Valenciennes,VFC
+516,Olympique de Marseille,Marseille,MAR
+517,FC Sochaux-Montbeliard,Sochaux,FCS
+518,Montpellier HSC,Montpellier,MON
+519,AJ Auxerre,Auxerre,AJA
+520,AS Nancy-Lorraine,Nancy,ASN
+521,Lille OSC,Lille,LIL
+522,OGC Nice,Nice,NIC
+523,Olympique Lyonnais,Olympique Lyon,LYO
+524,Paris Saint-Germain FC,PSG,PSG
+525,FC Lorient,Lorient,FCL
+526,FC Girondins de Bordeaux,Bordeaux,BOR
+527,AS Saint-Etienne,Saint-Etienne,ASS
+528,Dijon Football Cote d'Or,Dijon FCO,DFC
+529,Stade Rennais FC 1901,Stade Rennais,REN
+530,Amiens SC,Amiens SC,AMI
+531,ES Troyes AC,Troyes,ETR
+532,Angers SCO,Angers SCO,ANG
+533,Le Havre AC,Le Havre,HAC
+534,AC Arles-Avignon,Arles,AC 
+535,Le Mans FC,Le Mans,LMF
+536,SC Bastia,SC Bastia,SCB
+537,FC Istres,Istres,IST
+538,En Avant Guingamp,EA Guingamp,EAG
+539,La Berrichonne de Chateauroux,Chateauroux,LBC
+540,Stade Lavallois Mayenne FC,Stade Laval,LAV
+541,Clermont Foot 63,Clermont Foot,CLF
+543,FC Nantes,Nantes,NAN
+544,Tours FC,Tours FC,TFC
+545,FC Metz,FC Metz,FCM
+546,Racing Club de Lens,RC Lens,RCL
+547,Stade de Reims,Stade de Reims,SDR
+548,AS Monaco FC,Monaco,ASM
+550,CD Alcoyano,Alcoyano,ALC
+551,CD Guadalajara,Guadalajara,GUA
+553,BV Borussia 09 Dortmund II,Dortmund II,BVB
+554,Hallescher FC,Hallescher FC,HFC
+555,GFC Ajaccio,GFC Ajaccio,GAZ
+556,Nimes Olympique,Nimes Ol.,NÎM
+557,Chamois Niortais FC,Niort,NIO
+558,RC Celta de Vigo,Celta,CEL
+559,Sevilla FC,Sevilla FC,SEV
+560,RC Deportivo La Coruna,Deportivo,DEP
+563,West Ham United FC,West Ham,WHU
+565,FC Gueugnon,Gueugnon,FCG
+567,Red Star FC,Red Star,RST
+569,Cannes,,
+573,US Creteil-Lusitanos,Creteil,USC
+576,RC Strasbourg Alsace,Strasbourg,RC 
+577,FC Martigues,Martigues,FCM
+582,GD Estoril Praia,Estoril Praia,EST
+583,Moreirense FC,Moreirense,MOR
+584,UC Sampdoria,Sampdoria,SAM
+585,Delfino Pescara 1936,Pescara,PES
+586,Torino FC,Torino,TOR
+587,Novara Calcio,Novara,NOV
+588,SS Juve Stabia,Juve Stabia,STA
+589,SS Virtus Lanciano,Lanciano,
+590,FC Pro Vercelli 1892,Pro Vercelli,PRO
+591,AC Cesena,Cesena,CES
+593,AS Gubbio 1910,Gubbio,GUB
+594,Nocerina,,
+595,CD Mirandes,CD Mirandes,MIR
+596,CD Lugo,Lugo,LUG
+598,Mersin Idman Yurdu,,
+599,Eskisehirspor,Eskisehirspor,ESK
+600,Besiktas JK,Besiktas,BES
+601,Manisaspor,Manisaspor,MAN
+602,Trabzonspor,Trabzonspor,TRA
+603,Samsunspor,Samsunspor,SAM
+604,Genclerbirligi SK,Genclerbirligi,GEN
+605,Fraport-TAV Antalyaspor,Antalyaspor,ANT
+606,Gaziantepspor,Gaziantepspor,GAZ
+607,Bursaspor,Bursaspor,BUR
+608,Kayserispor,Kayserispor,KAY
+609,Buyuksehyr,,
+610,Galatasaray SK,Galatasaray,GAL
+611,Qarabag Agdam FK,Qarabag Agdam,QAR
+612,Demir Grup Sivasspor,Sivasspor,SIV
+613,Fenerbahce SK,Fenerbahce,FEN
+614,Orduspor,,
+615,CS Pandurii Targu-Jiu,Pandurii,PAN
+642,Atromitos,,ATR
+643,PAS Giannina,PAS Giannina,GIA
+644,Aris Thessaloniki FC,Thessaloniki,ARI
+646,Panathinaikos AO,Panathinaikos,PAO
+647,PAE Panionios GSS,Panionios,PAN
+648,PAE Diethnis Enosis Ergotelis FC,Ergotelis,ERG
+649,PAOK Thessaloniki FC,,SAL
+654,PAE Olympiakos SFP,Olympiakos,OLY
+655,Levadiakos,,LEV
+657,PAE AEL 1964,Larisa,AEL
+662,PAE Platanias,Platanias,PLA
+664,Veria FC,,
+665,Roda JC Kerkrade,Roda JC,RJC
+666,FC Twente '65,Twente,TWE
+668,VVV Venlo,Venlo,VVV
+670,SBV Excelsior,Excelsior,EXC
+671,Heracles Almelo,Heracles,HER
+672,Willem II Tilburg,Willem II,WII
+673,SC Heerenveen,Heerenveen,HEE
+674,PSV,PSV,PSV
+675,Feyenoord Rotterdam,Feyenoord,FEY
+676,FC Utrecht,Utrecht,UTR
+677,FC Groningen,Groningen,GRO
+678,AFC Ajax,Ajax,AJA
+679,SBV Vitesse,Vitesse,VIT
+680,ADO Den Haag,Den Haag,ADO
+681,NAC Breda,NAC,NAC
+682,AZ,AZ,AZ
+683,RKC Waalwijk,RKC,RKC
+684,PEC Zwolle,Zwolle,ZWO
+689,FC Vaslui,,
+691,Tirgu Mures,,
+692,CS Mioveni,Mioveni,MIO
+694,Vointa Sibiu,,
+696,Ceahlaul Piatra-Neamt,,
+698,AFC Astra Giurgiu,Astra Giurgiu,AGI
+699,FC Brasov,,
+701,Concordia Chiajna,,
+702,Sportul Studentesc,,
+704,Otelul Galati,,GAL
+705,CSS Drobeta Turnu Severin,CSS Drobeta,
+706,CSM Iasi,,
+707,Gloria Bistrita,,
+708,Farul Constanta,Farul,FCO
+712,FC Arouca,Arouca,FCA
+713,Carpi FC 1909,Carpi FC,CAR
+715,Cardiff City FC,Cardiff,CAR
+718,Go Ahead Eagles,Go Ahead,GOA
+719,SV 07 Elversberg,Elversberg,ELV
+720,Holstein Kiel,Holstein Kiel,KSV
+721,RB Leipzig,RB Leipzig,RBL
+722,US Latina,Latina,LAT
+723,Trapani Calcio,Trapani,TRA
+726,RSC Anderlecht,Anderlecht,AND
+729,FC Basel 1893,Basel,BAS
+731,FK Zenit Sankt-Petersburg,Zenit,ZEN
+732,Celtic FC,Celtic,CEL
+734,NK Maribor,Maribor,MAR
+740,1. FSV Mainz 05 II,Mainz 05 II,MAI
+741,SG Sonnenhof Grossaspach,Grossaspach,GRO
+742,US Orleans Loiret,Orleans,USO
+745,CD Leganes,Leganes,LEG
+747,ACD Virtus Entella,Virtus Entella,ENT
+748,FK BATE Barysau,BATE,BAT
+749,Malmo FF,Malmo FF,MAL
+752,APOEL FC,APOEL,APO
+754,FK Spartak Moskva,Spartak Moskva,SPA
+755,GNK Dinamo Zagreb,Dinamo Zagreb,DIN
+756,Netherlands,Netherlands,NLD
+757,KSKL Ternat,,
+758,Uruguay,Uruguay,URU
+759,Germany,Germany,GER
+760,Spain,Spain,ESP
+761,Paraguay,Paraguay,PAR
+762,Argentina,Argentina,ARG
+763,Ghana,Ghana,GHA
+764,Brazil,Brazil,BRA
+765,Portugal,Portugal,POR
+766,Japan,Japan,JPN
+767,Chile,Chile,CHI
+768,Slovakia,Slovakia,SVK
+769,Mexico,Mexico,MEX
+770,England,England,ENG
+771,United States,USA,USA
+772,South Korea,Korea Republic,KOR
+773,France,France,FRA
+774,South Africa,South Africa,RSA
+775,Greece,Greece,GRE
+776,Nigeria,Nigeria,NGA
+777,Slovenia,Slovenia,SVN
+778,Algeria,Algeria,ALG
+779,Australia,Australia,AUS
+780,Serbia,Serbia,SRB
+781,Cameroon,Cameroon,CMR
+782,Denmark,Denmark,DEN
+783,New Zealand,New Zealand,NZL
+784,Italy,Italy,ITA
+788,Switzerland,Switzerland,SUI
+789,Honduras,,
+790,Ukraine,Ukraine,UKR
+791,Ecuador,Ecuador,ECU
+792,Sweden,Sweden,SWE
+793,Costa Rica,Costa Rica,CRC
+794,Poland,Poland,POL
+795,Trinidad and Tobago,,
+796,Serbia and Montenegro,,
+797,Angola,Angola,ANG
+798,Czechia,Czechia,CZE
+799,Croatia,Croatia,CRO
+800,Togo,Togo,TOG
+801,Saudi Arabia,Saudi Arabia,KSA
+802,Tunisia,Tunisia,TUN
+803,Turkey,Turkey,TUR
+804,Senegal,Senegal,SEN
+805,Belgium,Belgium,BEL
+806,Ireland,Ireland,IRL
+808,Russia,Russia,RUS
+809,FC Penafiel,Penafiel,PEN
+810,Boavista FC,Boavista,BOA
+811,Romania,Romania,ROU
+812,Yugoslavia,,
+813,Norway,Norway,NOR
+814,Scotland,Scotland,SCO
+815,Morocco,Morocco,MAR
+816,Austria,Austria,AUT
+817,Bulgaria,Bulgaria,BUL
+818,Colombia,Colombia,COL
+819,Jamaica,Jamaica,JAM
+820,Bolivia,Bolivia,BOL
+821,West Germany,,
+822,Czechoslovakia,,
+823,USSR,,
+825,Egypt,Egypt,EGY
+827,Hungary,Hungary,HUN
+828,Canada,Canada,CAN
+829,Northern Ireland,North. Ireland,NIR
+830,El Salvador,,
+832,Peru,Peru,PER
+833,Wales,Wales,WAL
+834,DDR,,
+835,Zaire,,
+836,Haiti,Haiti,HAI
+838,Cuba,,
+839,Dutch East Indies,,
+840,Iran,Iran,IRN
+842,FK Dynamo Kyiv,Dynamo Kyiv,DYN
+850,FK Partizan Beograd,Partizan,PAR
+851,Club Brugge KV,Club Brugge,CLU
+882,FK Rubin Kazan,Rubin Kazan,RUB
+884,Maccabi Haifa FC,Maccabi Haifa,MHA
+889,Rosenborg BK,Rosenborg,RBK
+907,AC Sparta Praha,Sparta Praha,SPP
+910,Omonia Nicosia,,ONI
+916,Inter Baku,,
+928,PFK Levski Sofia,Levski Sofia,LEV
+930,SK Slavia Praha,Slavia Praha,SLP
+946,Aalborg BK,Aalborg,ABK
+949,Petrzalka,,FC 
+1001,NK Siroki Brijeg,Siroki Brijeg,ŠIR
+1003,FC Thun,Thun,THU
+1042,Football Bourg en Bresse Peronnas 01,Bourg Peronnas,FBB
+1044,AFC Bournemouth,Bournemouth,BOU
+1045,Paris FC,Paris FC,PFC
+1046,Athletic Bilbao B,Athletic Club II,
+1048,Real Oviedo,Real Oviedo,OVI
+1049,CD Tondela,Tondela,TON
+1052,CF Uniao da Madeira,Uniao Madeira,UNI
+1054,1. FC Magdeburg,Magdeburg,FCM
+1055,FC Wurzburger Kickers,Wurzburg,WUR
+1057,KAA Gent,KAA Gent,GEN
+1060,Bosnia-Herzegovina,Bosnia-H.,BIH
+1061,Israel,Israel,ISR
+1062,Latvia,Latvia,LVA
+1065,Albania,Albania,ALB
+1066,Iceland,Iceland,ISL
+1067,Bradford City AFC,Bradford City,BRA
+1068,Bury FC,Bury,BUR
+1069,Southend United FC,Southend Utd,SOU
+1071,Doncaster Rovers FC,Doncaster,DON
+1072,Burton Albion FC,Burton Albion,BUR
+1073,Fleetwood Town FC,Fleetwood Town,FLT
+1074,Crewe Alexandra FC,Crewe Alex,CRE
+1075,Oldham Athletic AFC,Oldham Athl,OLD
+1076,Coventry City FC,Coventry City,COV

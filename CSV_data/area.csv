@@ -1,0 +1,273 @@
+id,name,countryCode,parentAreaId
+2000,Afghanistan,AFG,2014
+2001,Africa,AFR,2267
+2002,Albania,ALB,2077
+2004,Algeria,ALG,2001
+2005,American Samoa,ASM,2175
+2006,Andorra,AND,2077
+2007,Angola,ANG,2001
+2008,Anguilla,AIA,2159
+2009,Antigua and Barbuda,ATG,2159
+2010,Arameans Suryoye,ARS,2267
+2011,Argentina,ARG,2220
+2012,Armenia,ARM,2077
+2013,Aruba,ABW,2159
+2014,Asia,ASI,2267
+2015,Australia,AUS,2014
+2016,Austria,AUT,2077
+2017,Azerbaijan,AZE,2077
+2018,Bahamas,BHS,2159
+2019,Bahrain,BHR,2014
+2020,Bangladesh,BAN,2014
+2021,Barbados,BRB,2159
+2022,Belarus,BLR,2077
+2023,Belgium,BEL,2077
+2024,Belize,BLZ,2159
+2025,Benin,BEN,2001
+2026,Bermuda,BMU,2159
+2027,Bhutan,BHU,2014
+2028,Bolivia,BOL,2220
+2029,Bonaire,BON,2159
+2030,Bosnia and Herzegovina,BIH,2077
+2031,Botswana,BOT,2001
+2032,Brazil,BRA,2220
+2033,British Virgin Islands,BVI,2159
+2034,Brunei Darussalam,BRU,2014
+2035,Bulgaria,BGR,2077
+2036,Burkina Faso,BFA,2001
+2037,Burundi,BDI,2001
+2038,Cambodia,CAM,2014
+2039,Cameroon,CMR,2001
+2040,Canada,CAN,2159
+2041,Cape Verde Islands,CPV,2001
+2042,Cayman Islands,CYM,2159
+2043,Central African Republic,CTA,2001
+2044,Chad,CHA,2001
+2045,Chile,CHL,2220
+2046,China PR,CHN,2014
+2047,Chinese Taipei,TPE,2014
+2048,CIS,CIS,2077
+2049,Colombia,COL,2220
+2050,Comoros,CMO,2001
+2051,Congo,CGO,2001
+2052,Congo DR,COD,2001
+2053,Cook Islands,COK,2175
+2054,Corsica,COR,2077
+2055,Costa Rica,CRI,2159
+2056,Côte d’Ivoire,CIV,2001
+2057,Crimea,ARC,2077
+2058,Croatia,HRV,2077
+2059,Cuba,CUB,2159
+2060,Curaçao,ANT,2159
+2061,Cyprus,CYP,2077
+2062,Czech Republic,CZE,2077
+2063,Czechoslovakia,CZS,2077
+2064,Darfur,DAR,2267
+2065,Denmark,DNK,2077
+2066,Djibouti,DJI,2001
+2067,Dominica,DMA,2159
+2068,Dominican Republic,DOM,2159
+2069,Ecuador,ECU,2220
+2070,Egypt,EGY,2001
+2071,El Salvador,SLV,2159
+2072,England,ENG,2077
+2073,Equatorial Guinea,EQG,2001
+2074,Eritrea,ERI,2001
+2075,Estonia,EST,2077
+2076,Ethiopia,ETH,2001
+2077,Europe,EUR,2267
+2078,Faroe Islands,FRO,2077
+2079,Fiji,FJI,2175
+2080,Finland,FIN,2077
+2081,France,FRA,2077
+2082,French Guiana,FGU,2159
+2083,FYR Macedonia,MKD,2077
+2084,Gabon,GAB,2001
+2085,Gambia,GAM,2001
+2086,GDR,GDR,2077
+2087,Georgia,GEO,2077
+2088,Germany,DEU,2077
+2089,Ghana,GHA,2001
+2090,Gibraltar,GIB,2077
+2091,Gozo,GOZ,2077
+2092,Great Britain,GBR,2077
+2093,Greece,GRC,2077
+2094,Greenland,GEE,2077
+2095,Grenada,GRD,2159
+2096,Guadeloupe,GDL,2159
+2097,Guam,GUM,2014
+2098,Guatemala,GTM,2159
+2099,Guernsey,GGY,2077
+2100,Guinea,GUI,2001
+2101,Guinea-Bissau,GNB,2001
+2102,Guyana,GUY,2159
+2103,Haiti,HTI,2159
+2104,Honduras,HND,2159
+2105,Hong Kong,HKG,2014
+2106,Hungary,HUN,2077
+2107,Iceland,ISL,2077
+2108,India,IND,2014
+2109,Indonesia,IDN,2014
+2110,Iran,IRN,2014
+2111,Iraq,IRQ,2014
+2112,Isle of Man,IOM,2077
+2113,Israel,ISR,2077
+2114,Italy,ITA,2077
+2115,Jamaica,JAM,2159
+2116,Japan,JPN,2014
+2117,Jersey,JER,2077
+2118,Jordan,JOR,2014
+2119,Kazakhstan,KAZ,2077
+2120,Kenya,KEN,2001
+2121,Kiribati,KIR,2175
+2122,Korea DPR,PRK,2014
+2123,Korea Republic,KOR,2014
+2124,Kosovo,KSV,2077
+2125,Kurdistan,KUR,2014
+2126,Kuwait,KUW,2014
+2127,Kyrgyzstan,KGZ,2014
+2128,Laos,LAO,2014
+2129,Latvia,LVA,2077
+2130,Lebanon,LIB,2014
+2131,Lesotho,LES,2001
+2132,Liberia,LBR,2001
+2133,Libya,LBY,2001
+2134,Liechtenstein,LIE,2077
+2135,Lithuania,LTU,2077
+2136,Luxembourg,LUX,2077
+2137,Macao,MAC,2014
+2138,Madagascar,MAD,2001
+2139,Malawi,MWI,2001
+2140,Malaysia,MAS,2014
+2141,Maldives,MDV,2014
+2142,Mali,MLI,2001
+2143,Malta,MLT,2077
+2144,Marshall Islands,MSI,2175
+2145,Martinique,MTQ,2159
+2146,Mauritania,MTN,2001
+2147,Mauritius,MRI,2001
+2148,Mayotte,MYT,2001
+2149,Mexico,MEX,2159
+2150,Micronesia,MIC,2175
+2151,Moldova,MHL,2077
+2152,Monaco,MCO,2077
+2153,Mongolia,MGL,2014
+2154,Montenegro,MNE,2077
+2155,Montserrat,MSR,2159
+2156,Morocco,MAR,2001
+2157,Mozambique,MOZ,2001
+2158,Myanmar,MYA,2014
+2159,N/C America,NCA,2267
+2160,Namibia,NAM,2001
+2161,Nauru,NAU,2175
+2162,Nepal,NEP,2014
+2163,Netherlands,NLD,2077
+2164,New Caledonia,NCL,2175
+2165,New Zealand,NZL,2175
+2166,NF-Board,NFB,2267
+2167,Nicaragua,NIC,2159
+2168,Niger,NIG,2001
+2169,Nigeria,NGA,2001
+2170,Niue,NIU,2175
+2171,Northern Ireland,NIR,2077
+2172,Northern Mariana Islands,NMI,2014
+2173,Norway,NOR,2077
+2174,Occitania,OCC,2267
+2175,Oceania,OCE,2267
+2176,Oman,OMA,2014
+2177,Padania,PAD,2267
+2178,Pakistan,PAK,2014
+2179,Palau,PLA,2175
+2180,Palestine,PAL,2014
+2181,Panama,PAN,2159
+2182,Papua New Guinea,PNG,2175
+2183,Paraguay,PRY,2220
+2184,Peru,PER,2220
+2185,Philippines,PHI,2014
+2186,Poland,POL,2077
+2187,Portugal,POR,2077
+2188,Provence,PRO,2267
+2189,Puerto Rico,PRI,2159
+2190,Qatar,QAT,2014
+2191,Raetia,RAE,2267
+2192,Republic of Ireland,IRL,2077
+2193,Reunion,REU,2001
+2194,Romania,ROU,2077
+2195,Russia,RUS,2077
+2196,Rwanda,RWA,2001
+2197,Saint Martin,SMT,2159
+2198,Saint Pierre and Miquelon,SPM,2159
+2199,Samoa,WSM,2175
+2200,San Marino,SMR,2077
+2201,São Tomé e Príncipe,STP,2001
+2202,Sápmi,SAP,2267
+2203,Saudi Arabia,KSA,2014
+2204,Scotland,SCO,2077
+2205,Senegal,SEN,2001
+2206,Serbia,SER,2077
+2207,Serbia and Montenegro,SCG,2077
+2208,Seychelles,SEY,2001
+2209,Shetland,SHE,2077
+2210,Sierra Leone,SLE,2001
+2211,Singapore,SIN,2014
+2212,Sint Eustatius,SEU,2159
+2213,Sint Maarten,SMA,2159
+2214,Slovakia,SVK,2077
+2215,Slovenia,SVN,2077
+2216,Solomon Islands,SLB,2175
+2217,Somalia,SOM,2001
+2218,Somaliland,SOL,2001
+2219,South Africa,RSA,2001
+2220,South America,SAM,2267
+2221,South Sudan,SSD,2001
+2222,Southern Cameroon,SCM,2267
+2223,Soviet Union,SOV,2077
+2224,Spain,ESP,2077
+2225,Sri Lanka,SRI,2014
+2226,St. Helena,STH,2001
+2227,St. Kitts and Nevis,SKN,2159
+2228,St. Lucia,STL,2159
+2229,St. Vincent and the Grenadines,SVG,2159
+2230,Sudan,SUD,2001
+2231,Suriname,SUR,2159
+2232,Swaziland,SWZ,2001
+2233,Sweden,SWE,2077
+2234,Switzerland,CHE,2077
+2235,Syria,SYR,2014
+2236,Tahiti,TAH,2175
+2237,Tajikistan,TJK,2014
+2238,Tamil Eelam,TEL,2267
+2239,Tanzania,TAN,2001
+2240,Thailand,THA,2014
+2241,Timor-Leste,EAT,2014
+2242,Togo,TOG,2001
+2243,Tonga,TON,2175
+2244,TR Northern Cyprus,NCY,2077
+2245,Trinidad and Tobago,TTO,2159
+2246,Tunisia,TUN,2001
+2247,Turkey,TUR,2077
+2248,Turkmenistan,TKM,2014
+2249,Turks and Caicos Islands,TCA,2159
+2250,Tuvalu,TVL,2175
+2251,Two Sicilies,TSI,2267
+2252,Uganda,UGA,2001
+2253,Ukraine,UKR,2077
+2254,United Arab Emirates,UAE,2014
+2255,United Kingdom,UK,2077
+2256,United States,USA,2159
+2257,Uruguay,URY,2220
+2258,US Virgin Islands,USV,2159
+2259,Uzbekistan,UZB,2014
+2260,Vanuatu,VUT,2175
+2261,Vatican City,VAC,2077
+2262,Venezuela,VEN,2220
+2263,Vietnam,VIE,2014
+2264,Wales,WAL,2077
+2265,West Indies,WIN,2267
+2266,Western Sahara,WSR,2001
+2267,World,INT,
+2268,Yemen,YEM,2014
+2269,Yugoslavia,YUG,2077
+2270,Zambia,ZAM,2001
+2271,Zanzibar,ZAN,2001
+2272,Zimbabwe,ZIM,2001
