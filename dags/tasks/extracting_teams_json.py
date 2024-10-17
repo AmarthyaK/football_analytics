@@ -18,7 +18,7 @@ def read_yaml(file_path):
             print(f"Error reading YAML file: {exc}")
             return None
 
-def loading_competitions(**kwargs):
+def extracting_teams(**kwargs):
 
 
     root_dir = '/home/amarubuntu/football_analytics_project/football_analytics'
@@ -37,15 +37,19 @@ def loading_competitions(**kwargs):
     "X-Auth-Token": api_key
     }
 
-    comp_url = 'http://api.football-data.org/v4/competitions/'
 
-    comp_response = requests.get(comp_url, headers=headers)
+    teams_url = 'http://api.football-data.org/v4/teams/'
 
+    teams_params = {
+        'limit': '10000'
+    }
 
-    if comp_response.status_code == 200:
+    teams_response = requests.get(teams_url, headers=headers,params = teams_params)
 
-        comp_data = comp_response.json()
-        comp_data_json = json.dumps(comp_data)
+    if teams_response.status_code == 200:
+
+        teams_data = teams_response.json()
+        teams_data_json = json.dumps(teams_data)
 
 
 
@@ -57,13 +61,13 @@ def loading_competitions(**kwargs):
                         region_name='us-east-1')
 
         bucket_name = 'football-analytics-amark'
-        s3_key = f'raw_data/competitions/competitions.json'
+        s3_key = f'raw_data/teams/teams.json'
 
         # Upload the JSON string directly to S3
         s3.put_object(
             Bucket=bucket_name,
             Key=s3_key,
-            Body=comp_data_json,  # The JSON string
+            Body=teams_data_json,  # The JSON string
             ContentType='application/json'  # Specify content type as JSON
         )
 

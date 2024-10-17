@@ -6,3 +6,4 @@ apache-airflow
 unidecode
 pyarrow
 awswrangler
+snowflake

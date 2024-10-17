@@ -21,14 +21,19 @@ sys.path.append(os.path.join(root_dir,'tasks'))
 
 
 # from tasks.loading_starting_match_json import loading_first_match_week
-from tasks.loading_competitions_json import loading_competitions
-from tasks.loading_areas_json import loading_areas
-from tasks.loading_teams_json import loading_teams
 
 
+##Extracting Tasks
+from tasks.extracting_competitions_json import extracting_competitions
+from tasks.extracting_areas_json import extracting_areas
+from tasks.extracting_teams_json import extracting_teams
+
+##Transformation Tasks
 from tasks.transforming_comps_json import transforming_competitions
 from tasks.transforming_areas_json import transforming_areas
 from tasks.transforming_teams_json import transforming_teams
+
+##Loading tasks
 
 
 ## function to read yaml:

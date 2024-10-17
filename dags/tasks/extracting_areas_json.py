@@ -18,7 +18,7 @@ def read_yaml(file_path):
             print(f"Error reading YAML file: {exc}")
             return None
 
-def loading_areas(**kwargs):
+def extracting_areas(**kwargs):
 
 
     root_dir = '/home/amarubuntu/football_analytics_project/football_analytics'
