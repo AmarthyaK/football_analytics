@@ -194,7 +194,7 @@ def transforming_matches(**kwargs):
 )
 
     # Delete the existing partition before writing new data
-    partition_path = f"{output_dir}/Matchweek={match_week}"
+    partition_path = f"{output_dir}Matchweek={match_week}/"
 
     # Delete all objects in the existing partition
     wr.s3.delete_objects(
