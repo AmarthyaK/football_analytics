@@ -89,7 +89,7 @@ def transforming_competitions(**kwargs):
 
     #selecting relvant columns only
 
-    rel_cols = ['id', 'name', 'code','type','area_id','area_name']
+    rel_cols = ['id', 'name', 'code','type','area_id']
 
     comp_df_filtered = comp_df_filtered[rel_cols]
 

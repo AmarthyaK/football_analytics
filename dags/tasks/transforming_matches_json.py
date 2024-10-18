@@ -24,6 +24,70 @@ def read_yaml(file_path):
             print(f"Error reading YAML file: {exc}")
             return None
 
+## read matchweek:
+def get_match_week(**kwargs):
+    root_dir = '/home/amarubuntu/football_analytics_project/football_analytics'
+    file_path = os.path.join(root_dir,'access_keys.yaml')
+    keys = read_yaml(file_path)
+
+    access_key = keys.get('AWS_creds')['access_key']
+    secret_access_key = keys.get('AWS_creds')['secret_access_key']
+
+    s3 = boto3.client('s3',
+                    aws_access_key_id=access_key,
+                    aws_secret_access_key=secret_access_key,
+                    region_name='us-east-1')
+    
+    bucket_name = 'football-analytics-amark'
+    s3_matchweek_tracker_key = 'matchweek_tracker/tracker.csv'
+
+    # Get the current matchweek from S3
+    try:
+        response = s3.get_object(Bucket=bucket_name, Key=s3_matchweek_tracker_key)
+        matchweek_tracker = pd.read_csv(response['Body'])
+        successful_matchweek = matchweek_tracker[matchweek_tracker['status'] == 'success']
+
+        matchweek = successful_matchweek.iloc[-1, 0]
+
+    except:
+        matchweek = 1
+    return int(matchweek)
+
+## function to update tracker
+def update_tracker(matchweek):
+    root_dir = '/home/amarubuntu/football_analytics_project/football_analytics'
+
+    file_path = os.path.join(root_dir,'access_keys.yaml')
+    keys = read_yaml(file_path)
+
+    api_key = keys.get('football_source_API_key')['api_key']
+    access_key = keys.get('AWS_creds')['access_key']
+    secret_access_key = keys.get('AWS_creds')['secret_access_key']
+        
+    s3 = boto3.client('s3',
+                    aws_access_key_id=access_key,
+                    aws_secret_access_key=secret_access_key,
+                    region_name='us-east-1')
+    
+    bucket_name = 'football-analytics-amark'
+    s3_matchweek_tracker_key = 'matchweek_tracker/tracker.csv'
+
+    response = s3.get_object(Bucket=bucket_name, Key=s3_matchweek_tracker_key)
+    matchweek_tracker_df = pd.read_csv(response['Body'])
+
+    # New row as a DataFrame (for compatibility with pandas 2.0+)
+    new_row_df = pd.DataFrame({'matchweek': [matchweek], 'status': ['success']})
+
+    # Append new row using concat
+    matchweek_tracker_df = pd.concat([matchweek_tracker_df, new_row_df], ignore_index=True)
+
+    csv_buffer = StringIO()
+    matchweek_tracker_df.to_csv(csv_buffer, index=False)
+
+    s3.put_object(Bucket=bucket_name, Key=s3_matchweek_tracker_key, Body=csv_buffer.getvalue())
+
+    
+
 
 # function to read json file from s3:
 def read_json_s3(bucket_name,key):
@@ -74,11 +138,12 @@ def transforming_matches(**kwargs):
     
     ## info about match start week:
 
-    ##match_week_information
-    match_week_user_input_file = os.path.join(root_dir,'matchweek_user_input.yaml')
-    match_week_user_input = read_yaml(match_week_user_input_file)
-    match_week = int(match_week_user_input.get('Matchweek')['Matchweek'])
+    # ##match_week_information
+    # match_week_user_input_file = os.path.join(root_dir,'matchweek_user_input.yaml')
+    # match_week_user_input = read_yaml(match_week_user_input_file)
+    # match_week = int(match_week_user_input.get('Matchweek')['Matchweek'])
 
+    match_week = kwargs.get('match_week',None)
 
     ## reading matchweek_starting_date mapping file:
 
@@ -118,24 +183,7 @@ def transforming_matches(**kwargs):
 
     output_dir = f's3://{bucket_name}/matches/'
 
-    # Create the path for partitioning (based on matchweek)
-    # partitioned_path = os.path.join(output_dir, f'Matchweek={match_week}')
-    # table = pa.Table.from_pandas(matches_df)
 
-    # Create S3 filesystem object
-    # s3 = S3FileSystem()
-
-    # try:
-    #     pq.write_to_dataset(
-    #         table,
-    #         root_path=output_dir,
-    #         filesystem = s3,
-    #         partition_cols=['Matchweek']
-    #     )
-
-    #     print(f"Data written to Parquet format at {partitioned_path}")
-    # except Exception as e:
-    #     print(e)
     #### using awswrangler
 
     # Create a session with your AWS credentials
@@ -144,7 +192,20 @@ def transforming_matches(**kwargs):
         aws_secret_access_key=secret_access_key,
         region_name='us-east-1'
 )
-    try:
-        wr.s3.to_parquet(matches_df,path = output_dir,partition_cols = ['Matchweek'],dataset = True,boto3_session=session)
-    except Exception as e:
-        print(e)
+
+    # Delete the existing partition before writing new data
+    partition_path = f"{output_dir}/Matchweek={match_week}"
+
+    # Delete all objects in the existing partition
+    wr.s3.delete_objects(
+        path=partition_path,
+        boto3_session=session
+    )
+
+
+    wr.s3.to_parquet(matches_df,
+                        path = output_dir,partition_cols = ['Matchweek'],
+                        dataset = True,
+                        boto3_session=session,
+                        mode = 'append')
+    update_tracker(match_week)

@@ -18,6 +18,35 @@ def read_yaml(file_path):
             print(f"Error reading YAML file: {exc}")
             return None
 
+def get_match_week(**kwargs):
+    root_dir = '/home/amarubuntu/football_analytics_project/football_analytics'
+    file_path = os.path.join(root_dir,'access_keys.yaml')
+    keys = read_yaml(file_path)
+
+    access_key = keys.get('AWS_creds')['access_key']
+    secret_access_key = keys.get('AWS_creds')['secret_access_key']
+
+    s3 = boto3.client('s3',
+                    aws_access_key_id=access_key,
+                    aws_secret_access_key=secret_access_key,
+                    region_name='us-east-1')
+    
+    bucket_name = 'football-analytics-amark'
+    s3_matchweek_tracker_key = 'matchweek_tracker/tracker.csv'
+
+    # Get the current matchweek from S3
+    try:
+        response = s3.get_object(Bucket=bucket_name, Key=s3_matchweek_tracker_key)
+        matchweek_tracker = pd.read_csv(response['Body'])
+        successful_matchweek = matchweek_tracker[matchweek_tracker['status'] == 'success']
+
+        matchweek = successful_matchweek.iloc[-1, 0]
+
+    except:
+        matchweek = 1
+    return int(matchweek)
+
+
 def extracting_matches(**kwargs):
 
 
@@ -39,10 +68,12 @@ def extracting_matches(**kwargs):
     }
 
     ##match_week_information
-    match_week_user_input_file = os.path.join(root_dir,'matchweek_user_input.yaml')
-    match_week_user_input = read_yaml(match_week_user_input_file)
-    match_week = int(match_week_user_input.get('Matchweek')['Matchweek'])
+    # match_week_user_input_file = os.path.join(root_dir,'matchweek_user_input.yaml')
+    # match_week_user_input = read_yaml(match_week_user_input_file)
+    # match_week = int(match_week_user_input.get('Matchweek')['Matchweek'])
+    # match_week = get_match_week()
 
+    match_week = kwargs.get('match_week',None)
 
     ## reading matchweek_starting_date mapping file:
 

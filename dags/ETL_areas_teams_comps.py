@@ -22,6 +22,8 @@ sys.path.append(os.path.join(root_dir,'tasks'))
 
 # from tasks.loading_starting_match_json import loading_first_match_week
 
+#creating database task
+from tasks.creating_sf_db import creating_sf_db_schema
 
 ##Extracting Tasks
 from tasks.extracting_competitions_json import extracting_competitions
@@ -34,7 +36,9 @@ from tasks.transforming_areas_json import transforming_areas
 from tasks.transforming_teams_json import transforming_teams
 
 ##Loading tasks
-
+from tasks.loading_competitions_sf import loading_competitions
+from tasks.loading_areas_sf import loading_areas
+from tasks.loading_teams_sf import loading_teams
 
 ## function to read yaml:
 # Function to read YAML file
@@ -85,15 +89,35 @@ with DAG('ETL_area_team_comp_dag',
     transform_teams_task = PythonOperator(
         task_id = 'transform_teams_task',
         python_callable = transforming_teams
-    )  
+    ) 
 
+    ## task 7
+    extract_competitions_task = PythonOperator(
+        task_id = 'extracting_competitions_task',
+        python_callable = extracting_competitions
+    )
 
+    ## task 8
+    extract_areas_task = PythonOperator(
+        task_id = 'extracting_areas_task',
+        python_callable = extracting_areas
+    )
+    ## task 9
+    extract_teams_task = PythonOperator(
+        task_id = 'extract_teams_task',
+        python_callable = extracting_teams
+    )
+    ## task 10
+    create_database_task = PythonOperator(
+        task_id = 'create_database',
+        python_callable = creating_sf_db_schema
+    ) 
 
 ## Dependencies
 
 # load_teams_task >> load_areas_task >> load_competitions_task
 
-load_competitions_task >> transform_competitions_task
-load_areas_task >> transform_areas_task
-load_teams_task >> transform_teams_task
+[extract_competitions_task >> transform_competitions_task,
+extract_areas_task >> transform_areas_task,
+extract_teams_task >> transform_teams_task] >> create_database_task >> [load_competitions_task,load_areas_task,load_teams_task]
 

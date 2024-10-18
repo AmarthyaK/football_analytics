@@ -56,6 +56,3 @@ def creating_sf_db_schema(**kwargs):
     dbname = 'footballanalytics'
     schema = 'footballanalytics_amark'
     create_general_db_schema(conn = conn,dbname=dbname,schema=schema)
-
-    
-

@@ -7,3 +7,4 @@ unidecode
 pyarrow
 awswrangler
 snowflake
+TIME-python

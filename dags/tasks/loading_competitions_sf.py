@@ -23,7 +23,7 @@ def read_yaml(file_path):
 
 
 
-def loading_areas(**kwargs):
+def loading_competitions(**kwargs):
 
     root_dir = '/home/amarubuntu/football_analytics_project/football_analytics'
     file_path = os.path.join(root_dir,'access_keys.yaml')
@@ -40,7 +40,7 @@ def loading_areas(**kwargs):
 
     dbname = 'footballanalytics'
     schema = 'footballanalytics_amark'
-    table_name = 'area'
+    table_name = 'competition'
     bucket_name = 'football-analytics-amark'
 
     conn = snowflake.connector.connect(
@@ -55,14 +55,15 @@ def loading_areas(**kwargs):
     
     try:
 
-        ## Creating areas table
+        ## Creating teams table
         cursor = conn.cursor()
         create_table_query = f"""
         CREATE OR REPLACE TABLE {table_name} (
-            id INT,
-            name VARCHAR (30),
-            countryCode VARCHAR(4),
-            parentAreaId INT
+            ID INT,
+            name VARCHAR (60),
+            code VARCHAR(5),
+            type VARCHAR(10),
+            area_id INT
         );       
         """
         cursor.execute(create_table_query)
@@ -77,8 +78,7 @@ def loading_areas(**kwargs):
     cursor = conn.cursor()
     truncate_query = f"""TRUNCATE {table_name};"""
     cursor.execute(truncate_query)
-
-    cursor = conn.cursor()
+    
     copy_into_table_query_new = f"""
     COPY INTO {table_name}
     FROM s3://{bucket_name}/{table_name}/{table_name}.csv credentials=(AWS_KEY_ID='{access_key}' AWS_SECRET_KEY='{secret_access_key}')
