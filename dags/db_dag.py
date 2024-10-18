@@ -24,6 +24,8 @@ sys.path.append(os.path.join(root_dir,'tasks'))
 # from tasks.loading_starting_match_json import loading_first_match_week
 from tasks.creating_sf_db import creating_sf_db_schema
 
+from tasks.loading_areas_sf import loading_areas
+
 
 ## function to read yaml:
 # Function to read YAML file
@@ -46,4 +48,12 @@ with DAG('db_dag',
     create_db_task = PythonOperator(
         task_id = 'creating_db_schema_task',
         python_callable = creating_sf_db_schema
-    )    
+    ) 
+
+    ## task 2
+    load_areas_task = PythonOperator(
+        task_id = 'loading_areas_task',
+        python_callable = loading_areas
+    )   
+
+create_db_task >> load_areas_task
