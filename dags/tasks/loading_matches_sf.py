@@ -111,7 +111,7 @@ def loading_matches(**kwargs):
 
     copy_into_table_query_new = f"""
     COPY INTO {table_name}
-    FROM 's3://{bucket_name}/{table_name}/Matchweek={match_week}/'
+    FROM 's3://{bucket_name}/{table_name}/Matchweek_partition={match_week}/'
     credentials=(AWS_KEY_ID='{access_key}' AWS_SECRET_KEY='{secret_access_key}')
     FILE_FORMAT = (TYPE = 'PARQUET')
     MATCH_BY_COLUMN_NAME = CASE_INSENSITIVE;

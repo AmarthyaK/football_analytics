@@ -64,10 +64,10 @@ default_args = {
 
 # Define a simple sleep function to introduce delay
 def sleep_task(**kwargs):
-    time.sleep(2)  # 60 seconds = 1 minute delay
+    time.sleep(1)  # 60 seconds = 1 minute delay
     print(f"Sleeping for 5 seconds between tasks")
 def sleep_task2(**kwargs):
-    time.sleep(2)  # 60 seconds = 1 minute delay
+    time.sleep(1)  # 60 seconds = 1 minute delay
     print(f"Sleeping for 6 seconds between tasks")
 
 # Define the DAG

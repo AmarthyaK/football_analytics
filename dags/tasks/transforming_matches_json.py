@@ -143,7 +143,7 @@ def transforming_matches(**kwargs):
     # match_week_user_input = read_yaml(match_week_user_input_file)
     # match_week = int(match_week_user_input.get('Matchweek')['Matchweek'])
 
-    match_week = kwargs.get('match_week',None)
+    match_week = kwargs.get('match_week',0)
 
     ## reading matchweek_starting_date mapping file:
 
@@ -172,9 +172,14 @@ def transforming_matches(**kwargs):
 
     matches_df['winner'] = matches_df.apply(lambda x: x['homeTeam_name'] if x['score_winner'] == 'HOME_TEAM' else (x['awayTeam_name'] if x['score_winner'] else 'DRAW'), axis = 1)
     matches_df['Matchweek'] = match_week
+    matches_df['Matchweek'] = matches_df['Matchweek'].astype(int)
 
-    rel_cols = ['id','utcDate','Matchweek','stage','area_id','area_name','competition_id','homeTeam_id','awayTeam_id','score_winner','score_fullTime_home','score_fullTime_away']
+    matches_df['Matchweek_partition'] = matches_df['Matchweek']
+
+    rel_cols = ['id','utcDate','Matchweek','Matchweek_partition','stage','area_id','area_name','competition_id','homeTeam_id','awayTeam_id','score_winner','score_fullTime_home','score_fullTime_away']
     matches_df = matches_df[rel_cols]
+
+    # print(matches_df['Matchweek'])
 
     matches_df['utcDate'] = pd.to_datetime(matches_df['utcDate']).dt.date
     matches_df = matches_df.drop(columns='area_name')
@@ -182,7 +187,6 @@ def transforming_matches(**kwargs):
     ## Time to load matches_df to parquet files with partition: Matchweek = 1
 
     output_dir = f's3://{bucket_name}/matches/'
-
 
     #### using awswrangler
 
@@ -194,7 +198,7 @@ def transforming_matches(**kwargs):
 )
 
     # Delete the existing partition before writing new data
-    partition_path = f"{output_dir}Matchweek={match_week}/"
+    partition_path = f"{output_dir}Matchweek_partition={match_week}/"
 
     # Delete all objects in the existing partition
     wr.s3.delete_objects(
@@ -204,7 +208,7 @@ def transforming_matches(**kwargs):
 
 
     wr.s3.to_parquet(matches_df,
-                        path = output_dir,partition_cols = ['Matchweek'],
+                        path = output_dir,partition_cols = ['Matchweek_partition'],
                         dataset = True,
                         boto3_session=session,
                         mode = 'append')
